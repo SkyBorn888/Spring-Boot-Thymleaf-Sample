@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ホームページ</title>
+</head>
+<body>
+<!-- -->
+<!-- <input type="text" th:field="*{s}"> -->
+<!-- actionを起こすURLを指定、objectはHomwController-->
+<form th:action="@{/post/first}" th:object="${'PostButton/HomeController'}" method="post">
+<!-- btnを作成する　押した後 post/firstに移動する　POST先はHomwControllerに記載している-->
+<div class="btn_area_center"><input type="submit" value="遷移する" class="btn"></div>
+</body>
+</html>

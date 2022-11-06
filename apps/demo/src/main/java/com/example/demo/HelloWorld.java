@@ -30,7 +30,7 @@ public class HelloWorld {
     //@RequestMapping(value = "/", method = RequestMethod.GET)
 
     //
-    @GetMapping("/")
+    @GetMapping("/Hello World")
     public String Hello(Model model) {
         model.addAttribute("title", "Hello World");
         model.addAttribute("message", "Welcome to my site");
